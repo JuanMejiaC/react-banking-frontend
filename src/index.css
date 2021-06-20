@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.active {
+  background-color: aqua;
+}
+
+.nav-link:hover {
+  color:cadetblue;
+  background-color: beige;
+}
+
+.border-red {
+  border-width: .25em;
+  border-color: red;
+}
+
+input {
+  text-align: right;
+}
