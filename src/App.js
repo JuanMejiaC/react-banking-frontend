@@ -1,7 +1,7 @@
 
 // import logo from './logo.svg';
 import './App.css';
-import { Route, Link, HashRouter, UserContext, CurrentUserContext, Funcion, Logged, Card} from './context';
+import { Route, HashRouter, UserContext} from './context';
 
 import NavBar from './navbar';
 import AllData from './alldata';
@@ -17,7 +17,7 @@ function App() {
   window.addEventListener('hashchange', handleHashChange);
   return (
     <HashRouter>
-      <UserContext.Provider value={{users:[{name:'John Doe',email:'john@mit.edu',password:'secret',balance:100}]}}>
+      <UserContext.Provider value={{users:[{name:'John Doe',email:'john@mit.edu',password:'secret',balance:100.00}]}}>
         <NavBar active={i}/>
         <div className="container d-flex justify-content-center"style={{padding: "20px"}}>
           <Route path="/" exact component={Home} />
